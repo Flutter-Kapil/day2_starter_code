@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,22 +20,32 @@ class MyColor extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 100,
-              color: Colors.orange,
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 10.0),
+              color: Colors.black,
             ),
-            Container(
-              height: 100,
-              color: Colors.white,
-              child: Center(
-                child: Image.network(
-                  ('https://raw.githubusercontent.com/McLarenCollege/Flutter-Course-Notes/master/ensign.png'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.orange,
                 ),
-              ),
-            ),
-            Container(
-              height: 100,
-              color: Colors.green,
-              margin: EdgeInsets.fromLTRB(0, 10.0, 0, 0),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.white,
+                  child: Center(
+                    child: Image.network(
+                      ('https://raw.githubusercontent.com/McLarenCollege/Flutter-Course-Notes/master/ensign.png'),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.green,
+                ),
+              ],
             ),
           ],
         ),
