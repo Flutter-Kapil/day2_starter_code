@@ -15,39 +15,36 @@ class MyColor extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.amberAccent,
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              height: 100,
-              color: Colors.black,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.orange,
-                ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.white,
-                  child: Center(
-                    child: Image.network(
-                      ('https://raw.githubusercontent.com/McLarenCollege/Flutter-Course-Notes/master/ensign.png'),
-                    ),
+        child: Container(
+          color: Colors.purple,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Container(
+                color: Colors.red,
+                width: 100,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.yellow,
                   ),
-                ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                ),
-              ],
-            ),
-          ],
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+              Container(
+                color: Colors.lightBlue,
+                width: 100,
+              ),
+            ],
+          ),
         ),
       ),
     );
